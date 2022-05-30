@@ -1,0 +1,36 @@
+a, p, h1, h2, h3, h4, h5, h6{
+    font-family: Poppins;
+    color: black;
+    // letter-spacing: 0.2rem;
+}
+header{
+    display: flex;
+    flex-direction: row;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // here it is
+    height: 100vh;
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+.upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 3rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    > p{
+        text-align: center;
+    }
+}
