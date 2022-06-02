@@ -1,25 +1,36 @@
-a, p, h1, h2, h3, h4, h5, h6{
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Poppins;
     color: black;
     // letter-spacing: 0.2rem;
 }
-header{
+
+header {
     display: flex;
     flex-direction: row;
 
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     // here it is
     height: 100vh;
 }
-.buttons{
+
+.buttons {
     display: flex;
     gap: 1rem;
 }
-.upload{
+
+.upload {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +41,44 @@ main{
     border-color: black;
     border-radius: 0.5rem;
     cursor: pointer;
-    > p{
+
+    >p {
         text-align: center;
     }
+}
+
+.players {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.player-wrapper{
+    display: flex;  
+}
+.player-name {
+    height: 3rem;
+    width: 10rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem 0 0 0.75rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    >p {
+        color: white;
+    }
+}
+.player-music{
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0 0.75rem 0.75rem 0;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
