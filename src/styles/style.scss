@@ -1,3 +1,6 @@
+$kotlarkaBlue: #243a65;
+$kotlarkaRed: #b9141a;
+
 a,
 p,
 h1,
@@ -81,4 +84,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.bi-pause-fill{
+    display: none;
+}
+.playing{
+    > .player-name{
+        background-color: $kotlarkaRed;
+        border-color: $kotlarkaRed;
+    }
+    > .player-music{
+        border-color: $kotlarkaRed;
+        > svg{
+            fill: $kotlarkaRed;
+        }
+        > .bi-play-fill{
+            display: none;
+        }
+        > .bi-pause-fill{
+            display: block;
+        }
+    }
 }

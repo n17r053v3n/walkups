@@ -5,5 +5,5 @@
     <div class="players">
         <Players/>
     </div>
-</main>
 
+</main>

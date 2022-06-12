@@ -121,4 +121,29 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.bi-pause-fill {
+  display: none;
+}
+
+.playing > .player-name {
+  background-color: #b9141a;
+  border-color: #b9141a;
+}
+
+.playing > .player-music {
+  border-color: #b9141a;
+}
+
+.playing > .player-music > svg {
+  fill: #b9141a;
+}
+
+.playing > .player-music > .bi-play-fill {
+  display: none;
+}
+
+.playing > .player-music > .bi-pause-fill {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
