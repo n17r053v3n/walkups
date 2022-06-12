@@ -35,6 +35,8 @@ function play(index) {
         console.log("first")
         // @ts-ignore
         music?.pause();
+        document.getElementById("general-play")?.classList.add("visible");
+        document.getElementById("general-pause")?.classList.remove("visible");
         // @ts-ignore
         if (music.currentTime != 0) {
             try {
@@ -52,9 +54,10 @@ function play(index) {
         console.log("second")
         // @ts-ignore
         music?.play();
+        document.getElementById("general-play")?.classList.remove("visible");
+        document.getElementById("general-pause")?.classList.add("visible");
         currentSong = index;
     }
-    // music.pause();
     console.log('playing?');
 }
 function skipBackward() {
