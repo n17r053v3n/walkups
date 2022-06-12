@@ -30,13 +30,49 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
+}
+
+div.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  gap: 15vw;
+}
+
+.music-player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: black;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  gap: 3rem;
 }
 
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   gap: 1rem;
 }
 
@@ -126,6 +162,14 @@ main {
   display: none;
 }
 
+.general-play, .general-pause {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .playing > .player-name {
   background-color: #b9141a;
   border-color: #b9141a;
@@ -145,5 +189,52 @@ main {
 
 .playing > .player-music > .bi-pause-fill {
   display: block;
+}
+
+.coming-soon {
+  height: 100%;
+  width: calc(100% - 4rem);
+  background-color: #000000;
+  z-index: 1000;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+  padding: 0rem 2rem;
+}
+
+.coming-soon > p,
+.coming-soon button {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+
+.coming-soon > p {
+  color: white;
+}
+
+.close {
+  margin-top: 2rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 3px solid #b9141a;
+  color: #b9141a;
+  background-color: transparent;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

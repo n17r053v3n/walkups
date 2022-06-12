@@ -24,12 +24,35 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     // here it is
     height: 100vh;
+    // gap: 15vw;
+}
+div.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // here it is
+    height: 80vh;
+    gap: 15vw;
+}
+// div.bottom{
+    
+// }
+
+.music-player{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1.5rem;
+    gap: 3rem;
 }
 
 .buttons {
     display: flex;
+    flex-direction: column-reverse;
     gap: 1rem;
 }
 
@@ -88,6 +111,12 @@ main {
 .bi-pause-fill{
     display: none;
 }
+.general-play, .general-pause{
+    display: none;
+}
+.visible{
+    display: block;
+}
 .playing{
     > .player-name{
         background-color: $kotlarkaRed;
@@ -105,4 +134,38 @@ main {
             display: block;
         }
     }
+}
+.coming-soon {
+    height: 100%;
+    width: calc(100% - 4rem);
+    background-color: #000000;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 0rem 2rem;
+    > p,
+    button {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+        text-decoration: none;
+    }
+    > p{
+        color: white;
+    }
+}
+.close {
+    margin-top: 2rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    border: 3px solid $kotlarkaRed;
+    color: $kotlarkaRed;
+    background-color: transparent;
+    cursor: pointer;
 }
