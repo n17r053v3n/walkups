@@ -1,38 +1,11 @@
-# create-svelte
+# The Walkups project
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Dependencies
 
-## Creating a project
+> **[Node.js](https://nodejs.org)** *(the project was built on version 16.14.2 with npm version 8.10.0)*
+> **Internet connection** *(Source code uses graphics and fonts that are not present in the directory)*
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Run the project on localhost
 
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> Navigate to the **walkups** directory and run "**`npm run dev`**"
+> Project should be run on http://localhost:3000 by default
