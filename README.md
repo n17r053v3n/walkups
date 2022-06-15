@@ -1,6 +1,6 @@
 # The Walkups project
 
-This web app should ease of playing walkup songs on baseball matches.
+This web app should ease playing walkup songs on baseball matches.
 
 ## Dependencies
 
