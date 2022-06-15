@@ -7,5 +7,5 @@
 
 ## Run the project on localhost
 
-> Navigate to the **walkups** directory and run "**`npm run dev`**"
+> Navigate to the **walkups** directory and run **`npm run dev`**
 > Project should be run on http://localhost:3000 by default
