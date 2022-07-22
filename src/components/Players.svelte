@@ -11,9 +11,9 @@
 				<p>{player[0]}</p>
 			</div>
 			<!-- <div class="player-music" on:click={() => play("hello")} player-music="{index}"> -->
-			<div class="player-music" onclick="play({index})" player-music={index}>
+			<div class="player-music" onclick="play(index)" player-music={index}>
 				<audio music={index}>
-					<source src="/src/songs/{player[1]}" />
+					<source src="/songs/{player[1]}" />
 				</audio>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
