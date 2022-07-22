@@ -100,3 +100,9 @@ function justPause() {
         document.getElementById("general-pause")?.classList.add("visible");
     }
 }
+export {
+    justPause,
+    skipBackward,
+    skipForward,
+    play,
+}
